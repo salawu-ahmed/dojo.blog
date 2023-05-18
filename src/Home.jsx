@@ -5,19 +5,25 @@ import { useEffect } from 'react'
 
 const Home = () => {
     const [blogs, setBlogs] = useState(null)
+    const [isPending, setIsPending] = useState(true)
 
     useEffect(() => {
-        fetch('http://localhost:8000/blogs')
+        setTimeout(() => {
+            fetch('http://localhost:8000/blogs')
             .then((res) => res.json())
             .then((data) => {
                 console.log(data)
                 setBlogs(data)
+                setIsPending(false)
             })
             // the above code will not produce an infinite loop because of the empty dependency array
+        }, 1000);
+        
     }, [])
 
   return (
     <div className="home">
+        {isPending && <p>loading...</p>}
         {blogs && <BlogList blogs={blogs} title='All blogs!'/>}
         {/* 
         conditional templating in react, the thing on the right is only output if the thing on the left is true 
