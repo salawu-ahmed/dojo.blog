@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import BlogList from './BlogList'
+import { useEffect } from 'react'
 
 const Home = () => {
     const [blogs, setBlogs] = useState([
@@ -13,6 +14,11 @@ const Home = () => {
         const newBlogs = blogs.filter((blog) => blog.id !== id)
         setBlogs(newBlogs)
     }
+    useEffect(() => {
+        console.log('useEffect run');
+        // state can be accessed in useEffect
+        console.log(blogs);
+    })
 
   return (
     <div className="home">
