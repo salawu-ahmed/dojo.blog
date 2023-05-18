@@ -4,30 +4,24 @@ import BlogList from './BlogList'
 import { useEffect } from 'react'
 
 const Home = () => {
-    const [blogs, setBlogs] = useState([
-        {title: "My new website", body: 'lorem ipsum....', author: 'mario', id:1},
-        {title: "Welcome party!", body: 'lorem ipsum....', author: 'roshi', id:2},
-        {title: "Web dev top tips", body: 'lorem ipsum....', author: 'luigi', id:3},
-        {title: "Writing your first react app", body: 'lorem ipsum....', author: 'mario', id:4}
-    ])
+    const [blogs, setBlogs] = useState(null)
 
-    const [name, setName] = useState('mario')
-
-    const handleDelete = (id) => {
-        const newBlogs = blogs.filter((blog) => blog.id !== id)
-        setBlogs(newBlogs)
-    }
     useEffect(() => {
-        console.log('useEffect run');
-        // state can be accessed in useEffect
-        console.log(name);
-    }, [name])
+        fetch('http://localhost:8000/blogs')
+            .then((res) => res.json())
+            .then((data) => {
+                console.log(data)
+                setBlogs(data)
+            })
+            // the above code will not produce an infinite loop because of the empty dependency array
+    }, [])
 
   return (
     <div className="home">
-        <BlogList blogs={blogs} title='All blogs!' handleDelete={handleDelete}/>
-        <p>{name}</p>
-        <button onClick={() => setName('luigi')}>change name</button>
+        {blogs && <BlogList blogs={blogs} title='All blogs!'/>}
+        {/* 
+        conditional templating in react, the thing on the right is only output if the thing on the left is true 
+        */}
     </div>
   )
 }
