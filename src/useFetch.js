@@ -6,8 +6,10 @@ const useFetch = (url) => {
     const [error, setError] = useState(null)
 
     useEffect(() => {
+        const abortController = new AbortController()
+
         setTimeout(() => {
-            fetch(url)
+            fetch(url, {signal: abortController.signal})
             .then((res) => {
                 if (!res.ok) throw Error('could not fetch the data from that resource') 
                 return res.json()
@@ -18,10 +20,15 @@ const useFetch = (url) => {
                 setError(null)
             })
             .catch((err) => {
+                if (err.name === 'AbortError') {
+                    console.log('fetch aborted');
+                }
                 setError(err.message)
                 setIsPending(false)
             })
-        }, 5000);
+        }, 1000);
+
+        return () => abortController.abort()
     }, [url])
     // whenever the url changes the useEffect() hook runs 
 
