@@ -1,28 +1,46 @@
 {
-    "blogs": [
-        {
-            "title": "My new website", 
-            "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aut et tempora iste vitae fugiat nihil aliquam perspiciatis atque doloribus eaque, harum nemo eius dolorum quia dignissimos laboriosam ex sit. Ad unde nemo similique eligendi, reprehenderit odit eum voluptates nostrum impedit excepturi veniam rem illum at. Excepturi id sit facilis! Quibusdam totam quisquam alias quidem ipsa deleniti, quis eligendi!", 
-            "author": "mario", 
-            "id":1
-        },
-        {
-            "title": "Welcome party!", 
-            "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aut et tempora iste vitae fugiat nihil aliquam perspiciatis atque doloribus eaque, harum nemo eius dolorum quia dignissimos laboriosam ex sit. Ad unde nemo similique eligendi, reprehenderit odit eum voluptates nostrum impedit excepturi veniam rem illum at. Excepturi id sit facilis! Quibusdam totam quisquam alias quidem ipsa deleniti, quis eligendi!", 
-            "author": "luigi", 
-            "id":2
-        },
-        {
-            "title": "Web dev top tips", 
-            "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aut et tempora iste vitae fugiat nihil aliquam perspiciatis atque doloribus eaque, harum nemo eius dolorum quia dignissimos laboriosam ex sit. Ad unde nemo similique eligendi, reprehenderit odit eum voluptates nostrum impedit excepturi veniam rem illum at. Excepturi id sit facilis! Quibusdam totam quisquam alias quidem ipsa deleniti, quis eligendi!", 
-            "author": "mario", 
-            "id":3
-        },
-        {
-            "title": "Writing your first react app", 
-            "body":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aut et tempora iste vitae fugiat nihil aliquam perspiciatis atque doloribus eaque, harum nemo eius dolorum quia dignissimos laboriosam ex sit. Ad unde nemo similique eligendi, reprehenderit odit eum voluptates nostrum impedit excepturi veniam rem illum at. Excepturi id sit facilis! Quibusdam totam quisquam alias quidem ipsa deleniti, quis eligendi!", 
-            "author": "mario", 
-            "id":4
-        }
-    ]
+  "blogs": [
+    {
+      "title": "My new website",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aut et tempora iste vitae fugiat nihil aliquam perspiciatis atque doloribus eaque, harum nemo eius dolorum quia dignissimos laboriosam ex sit. Ad unde nemo similique eligendi, reprehenderit odit eum voluptates nostrum impedit excepturi veniam rem illum at. Excepturi id sit facilis! Quibusdam totam quisquam alias quidem ipsa deleniti, quis eligendi!",
+      "author": "mario",
+      "id": 1
+    },
+    {
+      "title": "Welcome party!",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aut et tempora iste vitae fugiat nihil aliquam perspiciatis atque doloribus eaque, harum nemo eius dolorum quia dignissimos laboriosam ex sit. Ad unde nemo similique eligendi, reprehenderit odit eum voluptates nostrum impedit excepturi veniam rem illum at. Excepturi id sit facilis! Quibusdam totam quisquam alias quidem ipsa deleniti, quis eligendi!",
+      "author": "luigi",
+      "id": 2
+    },
+    {
+      "title": "Web dev top tips",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aut et tempora iste vitae fugiat nihil aliquam perspiciatis atque doloribus eaque, harum nemo eius dolorum quia dignissimos laboriosam ex sit. Ad unde nemo similique eligendi, reprehenderit odit eum voluptates nostrum impedit excepturi veniam rem illum at. Excepturi id sit facilis! Quibusdam totam quisquam alias quidem ipsa deleniti, quis eligendi!",
+      "author": "mario",
+      "id": 3
+    },
+    {
+      "title": "Writing your first react app",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aut et tempora iste vitae fugiat nihil aliquam perspiciatis atque doloribus eaque, harum nemo eius dolorum quia dignissimos laboriosam ex sit. Ad unde nemo similique eligendi, reprehenderit odit eum voluptates nostrum impedit excepturi veniam rem illum at. Excepturi id sit facilis! Quibusdam totam quisquam alias quidem ipsa deleniti, quis eligendi!",
+      "author": "mario",
+      "id": 4
+    },
+    {
+      "title": "Writing your first C++ program in Vs Code!",
+      "body": "this is the body",
+      "author": "mario",
+      "id": 5
+    },
+    {
+      "title": "Writing your first C++ program in Vs Code!",
+      "body": "this is the body",
+      "author": "yoshi",
+      "id": 6
+    },
+    {
+      "title": "welcome to Ghana!",
+      "body": "this is the body",
+      "author": "mario",
+      "id": 7
+    }
+  ]
 }
