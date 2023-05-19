@@ -8,11 +8,10 @@ const Create = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const blog = {
-      title: "",
-      body: "",
-      author: ""
-    }
+    const blog = { title, body, author }
+    // the blog values are from the state we created above 
+    console.log(blog);
+
   }
 
   return (
