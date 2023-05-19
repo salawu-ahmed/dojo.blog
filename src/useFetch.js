@@ -13,7 +13,6 @@ const useFetch = (url) => {
                 return res.json()
             })
             .then((data) => {
-                console.log(data)
                 setData(data)
                 setIsPending(false)
                 setError(null)
@@ -22,7 +21,7 @@ const useFetch = (url) => {
                 setError(err.message)
                 setIsPending(false)
             })
-        }, 1000);
+        }, 5000);
     }, [url])
     // whenever the url changes the useEffect() hook runs 
 
